@@ -81,10 +81,16 @@ export class ExtensionServer {
      * Using the google api client instead prevents this from happening.
      */
     const subscriptionExists = async (): Promise<boolean> => {
-      const response = await google
-        .pubsub('v1')
-        .projects.subscriptions.get({ subscription: subscription.name })
-      return response.status === 200
+      try {
+        const response = await google
+          .pubsub('v1')
+          .projects.subscriptions.get({ subscription: subscription.name })
+        return response.status === 200
+      } catch (err) {
+        this.log.debug('Unable to retrieve subscription', subscription.name)
+        this.log.error(err)
+        return false
+      }
     }
     if (await subscriptionExists()) {
       return subscription
