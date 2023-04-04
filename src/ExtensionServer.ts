@@ -88,14 +88,13 @@ export class ExtensionServer {
         return response.status === 200
       } catch (err) {
         this.log.debug('Unable to retrieve subscription', subscription.name)
-        this.log.error(err)
-        return false
+        return false // TODO return false only if 404, otherwise what, throw?
       }
     }
     if (await subscriptionExists()) {
       return subscription
     }
-    this.log.debug(subscription, 'Creating new topic subscription')
+    this.log.debug(subscription.name, 'Creating new topic subscription')
     const [newSubscription] = await this.pubSubClient.createSubscription(
       topic,
       name,
