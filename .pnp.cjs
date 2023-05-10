@@ -66,6 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mailgun.js", "npm:8.2.1"],\
             ["messagebird", "npm:4.0.1"],\
+            ["moleculer", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:0.14.29"],\
             ["node-fetch", "virtual:94e2650e81a726e7adc8f0f6e639be3d7648493f2f2b84c27eee40ecea9a62ed0532e681c130c39c234a2ad47b19ceeb2d6987857059ffec26dfbe9101153344#npm:2.6.9"],\
             ["openai", "npm:3.2.1"],\
             ["pino-pretty", "npm:9.4.0"],\
@@ -75,6 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:29.0.5"],\
             ["ts-node-dev", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:2.0.0"],\
             ["twilio", "npm:4.8.0"],\
+            ["typedi", "npm:0.8.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["zod", "npm:3.21.4"],\
             ["zod-validation-error", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:1.0.1"]\
@@ -185,6 +187,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mailgun.js", "npm:8.2.1"],\
             ["messagebird", "npm:4.0.1"],\
+            ["moleculer", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:0.14.29"],\
             ["node-fetch", "virtual:94e2650e81a726e7adc8f0f6e639be3d7648493f2f2b84c27eee40ecea9a62ed0532e681c130c39c234a2ad47b19ceeb2d6987857059ffec26dfbe9101153344#npm:2.6.9"],\
             ["openai", "npm:3.2.1"],\
             ["pino-pretty", "npm:9.4.0"],\
@@ -194,6 +197,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:29.0.5"],\
             ["ts-node-dev", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:2.0.0"],\
             ["twilio", "npm:4.8.0"],\
+            ["typedi", "npm:0.8.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["zod", "npm:3.21.4"],\
             ["zod-validation-error", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:1.0.1"]\
@@ -4698,6 +4702,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["args", [\
+        ["npm:5.0.3", {\
+          "packageLocation": "./.yarn/cache/args-npm-5.0.3-ec59f35e6d-ac39e65609.zip/node_modules/args/",\
+          "packageDependencies": [\
+            ["args", "npm:5.0.3"],\
+            ["camelcase", "npm:5.0.0"],\
+            ["chalk", "npm:2.4.2"],\
+            ["leven", "npm:2.1.0"],\
+            ["mri", "npm:1.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["array-includes", [\
         ["npm:3.1.6", {\
           "packageLocation": "./.yarn/cache/array-includes-npm-3.1.6-d0ff9d248b-f22f8cd8ba.zip/node_modules/array-includes/",\
@@ -5329,6 +5346,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["camelcase", [\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/camelcase-npm-5.0.0-c808398846-8bfe920e04.zip/node_modules/camelcase/",\
+          "packageDependencies": [\
+            ["camelcase", "npm:5.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:5.3.1", {\
           "packageLocation": "./.yarn/cache/camelcase-npm-5.3.1-5db8af62c5-e6effce26b.zip/node_modules/camelcase/",\
           "packageDependencies": [\
@@ -6842,6 +6866,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["eventemitter2", [\
+        ["npm:6.4.9", {\
+          "packageLocation": "./.yarn/cache/eventemitter2-npm-6.4.9-ba37798a18-be59577c1e.zip/node_modules/eventemitter2/",\
+          "packageDependencies": [\
+            ["eventemitter2", "npm:6.4.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["events", [\
         ["npm:3.3.0", {\
           "packageLocation": "./.yarn/cache/events-npm-3.3.0-c280bc7e48-f6f487ad21.zip/node_modules/events/",\
@@ -7101,6 +7134,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["fast-url-parser", "npm:1.1.3"],\
             ["punycode", "npm:1.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["fastest-validator", [\
+        ["npm:1.17.0", {\
+          "packageLocation": "./.yarn/cache/fastest-validator-npm-1.17.0-700dc193d8-0a6240f6dc.zip/node_modules/fastest-validator/",\
+          "packageDependencies": [\
+            ["fastest-validator", "npm:1.17.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8180,6 +8222,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ipaddr.js-npm-1.9.1-19ae7878b4-f88d382598.zip/node_modules/ipaddr.js/",\
           "packageDependencies": [\
             ["ipaddr.js", "npm:1.9.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/ipaddr.js-npm-2.0.1-04e97280d7-dd194a394a.zip/node_modules/ipaddr.js/",\
+          "packageDependencies": [\
+            ["ipaddr.js", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9458,9 +9507,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kleur", "npm:3.0.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.1.5", {\
+          "packageLocation": "./.yarn/cache/kleur-npm-4.1.5-46b6135f41-1dc476e327.zip/node_modules/kleur/",\
+          "packageDependencies": [\
+            ["kleur", "npm:4.1.5"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["leven", [\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/leven-npm-2.1.0-19f0a16606-f7b4a01b15.zip/node_modules/leven/",\
+          "packageDependencies": [\
+            ["leven", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.1.0", {\
           "packageLocation": "./.yarn/cache/leven-npm-3.1.0-b7697736a3-638401d534.zip/node_modules/leven/",\
           "packageDependencies": [\
@@ -10155,6 +10218,131 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["mnemonist", "npm:0.39.5"],\
             ["obliterator", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["moleculer", [\
+        ["npm:0.14.29", {\
+          "packageLocation": "./.yarn/cache/moleculer-npm-0.14.29-7dc590a443-b04d1012dc.zip/node_modules/moleculer/",\
+          "packageDependencies": [\
+            ["moleculer", "npm:0.14.29"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:0.14.29", {\
+          "packageLocation": "./.yarn/__virtual__/moleculer-virtual-343d06b970/0/cache/moleculer-npm-0.14.29-7dc590a443-b04d1012dc.zip/node_modules/moleculer/",\
+          "packageDependencies": [\
+            ["moleculer", "virtual:d0a76b174a54d973a27fb74b962aa2f26df55e18a188b76dd96ab65ec80e4a0b001d63550589d8a4f2f542a16ec7ef50e51453b019e1529d4f43d2542f174b98#npm:0.14.29"],\
+            ["@types/amqplib", null],\
+            ["@types/avsc", null],\
+            ["@types/bunyan", null],\
+            ["@types/cbor-x", null],\
+            ["@types/dd-trace", null],\
+            ["@types/debug", null],\
+            ["@types/etcd3", null],\
+            ["@types/ioredis", null],\
+            ["@types/jaeger-client", null],\
+            ["@types/kafka-node", null],\
+            ["@types/log4js", null],\
+            ["@types/mqtt", null],\
+            ["@types/msgpack5", null],\
+            ["@types/nats", null],\
+            ["@types/node-nats-streaming", null],\
+            ["@types/notepack.io", null],\
+            ["@types/pino", null],\
+            ["@types/protobufjs", null],\
+            ["@types/redlock", null],\
+            ["@types/rhea-promise", null],\
+            ["@types/thrift", null],\
+            ["@types/winston", null],\
+            ["amqplib", null],\
+            ["args", "npm:5.0.3"],\
+            ["avsc", null],\
+            ["bunyan", null],\
+            ["cbor-x", null],\
+            ["dd-trace", null],\
+            ["debug", null],\
+            ["etcd3", null],\
+            ["eventemitter2", "npm:6.4.9"],\
+            ["fastest-validator", "npm:1.17.0"],\
+            ["glob", "npm:7.2.3"],\
+            ["ioredis", null],\
+            ["ipaddr.js", "npm:2.0.1"],\
+            ["jaeger-client", null],\
+            ["kafka-node", null],\
+            ["kleur", "npm:4.1.5"],\
+            ["lodash", "npm:4.17.21"],\
+            ["log4js", null],\
+            ["lru-cache", "npm:6.0.0"],\
+            ["mqtt", null],\
+            ["msgpack5", null],\
+            ["nats", null],\
+            ["node-fetch", "virtual:94e2650e81a726e7adc8f0f6e639be3d7648493f2f2b84c27eee40ecea9a62ed0532e681c130c39c234a2ad47b19ceeb2d6987857059ffec26dfbe9101153344#npm:2.6.9"],\
+            ["node-nats-streaming", null],\
+            ["notepack.io", null],\
+            ["pino", null],\
+            ["protobufjs", null],\
+            ["recursive-watch", "npm:1.1.4"],\
+            ["redlock", null],\
+            ["rhea-promise", null],\
+            ["thrift", null],\
+            ["winston", null]\
+          ],\
+          "packagePeers": [\
+            "@types/amqplib",\
+            "@types/avsc",\
+            "@types/bunyan",\
+            "@types/cbor-x",\
+            "@types/dd-trace",\
+            "@types/debug",\
+            "@types/etcd3",\
+            "@types/ioredis",\
+            "@types/jaeger-client",\
+            "@types/kafka-node",\
+            "@types/log4js",\
+            "@types/mqtt",\
+            "@types/msgpack5",\
+            "@types/nats",\
+            "@types/node-nats-streaming",\
+            "@types/notepack.io",\
+            "@types/pino",\
+            "@types/protobufjs",\
+            "@types/redlock",\
+            "@types/rhea-promise",\
+            "@types/thrift",\
+            "@types/winston",\
+            "amqplib",\
+            "avsc",\
+            "bunyan",\
+            "cbor-x",\
+            "dd-trace",\
+            "debug",\
+            "etcd3",\
+            "ioredis",\
+            "jaeger-client",\
+            "kafka-node",\
+            "log4js",\
+            "mqtt",\
+            "msgpack5",\
+            "nats",\
+            "node-nats-streaming",\
+            "notepack.io",\
+            "pino",\
+            "protobufjs",\
+            "redlock",\
+            "rhea-promise",\
+            "thrift",\
+            "winston"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["mri", [\
+        ["npm:1.1.4", {\
+          "packageLocation": "./.yarn/cache/mri-npm-1.1.4-d22a399f26-e65b9aed3b.zip/node_modules/mri/",\
+          "packageDependencies": [\
+            ["mri", "npm:1.1.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11242,6 +11430,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/real-require-npm-0.2.0-7f69dbc7b6-fa060f19f2.zip/node_modules/real-require/",\
           "packageDependencies": [\
             ["real-require", "npm:0.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["recursive-watch", [\
+        ["npm:1.1.4", {\
+          "packageLocation": "./.yarn/cache/recursive-watch-npm-1.1.4-c21a58ebb8-0cce9c6413.zip/node_modules/recursive-watch/",\
+          "packageDependencies": [\
+            ["recursive-watch", "npm:1.1.4"],\
+            ["ttl", "npm:1.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12520,6 +12718,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ttl", [\
+        ["npm:1.3.1", {\
+          "packageLocation": "./.yarn/cache/ttl-npm-1.3.1-945f9a6e1b-97a00686f6.zip/node_modules/ttl/",\
+          "packageDependencies": [\
+            ["ttl", "npm:1.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["twilio", [\
         ["npm:4.8.0", {\
           "packageLocation": "./.yarn/cache/twilio-npm-4.8.0-8d81f06f8a-9850ae1a34.zip/node_modules/twilio/",\
@@ -12588,6 +12795,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["call-bind", "npm:1.0.2"],\
             ["for-each", "npm:0.3.3"],\
             ["is-typed-array", "npm:1.1.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["typedi", [\
+        ["npm:0.8.0", {\
+          "packageLocation": "./.yarn/cache/typedi-npm-0.8.0-6729062c9f-f6fc275672.zip/node_modules/typedi/",\
+          "packageDependencies": [\
+            ["typedi", "npm:0.8.0"]\
           ],\
           "linkType": "HARD"\
         }]\

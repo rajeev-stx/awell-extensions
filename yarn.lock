@@ -95,6 +95,7 @@ __metadata:
     lodash: ^4.17.21
     mailgun.js: ^8.2.1
     messagebird: ^4.0.1
+    moleculer: ^0.14.29
     node-fetch: 2
     openai: ^3.2.1
     pino-pretty: ^9.4.0
@@ -104,6 +105,7 @@ __metadata:
     ts-jest: ^29.0.5
     ts-node-dev: ^2.0.0
     twilio: ^4.8.0
+    typedi: 0.8.0
     typescript: 4.9.5
     zod: ^3.21.4
     zod-validation-error: ^1.0.1
@@ -3130,6 +3132,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"args@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "args@npm:5.0.3"
+  dependencies:
+    camelcase: 5.0.0
+    chalk: 2.4.2
+    leven: 2.1.0
+    mri: 1.1.4
+  checksum: ac39e656090f9364d7a2a42216a572dfe36d3e4d16d87ca4c1c9552a1c325dc222b642124cb96cdeeafb46662922910191f5aa12142cc4ca117b6d85454c8423
+  languageName: node
+  linkType: hard
+
 "array-includes@npm:^3.1.6":
   version: 3.1.6
   resolution: "array-includes@npm:3.1.6"
@@ -3639,6 +3653,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"camelcase@npm:5.0.0":
+  version: 5.0.0
+  resolution: "camelcase@npm:5.0.0"
+  checksum: 8bfe920e0472d79d34f0279da1391f155bcce7fc74c99b49dafae4f787396040a34f4023da837ab0b4372e63224b460f9524b495906863c38876faea9da53705
+  languageName: node
+  linkType: hard
+
 "camelcase@npm:^5.0.0, camelcase@npm:^5.3.1":
   version: 5.3.1
   resolution: "camelcase@npm:5.3.1"
@@ -3680,7 +3701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^2.0.0":
+"chalk@npm:2.4.2, chalk@npm:^2.0.0":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -4851,6 +4872,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eventemitter2@npm:^6.4.9":
+  version: 6.4.9
+  resolution: "eventemitter2@npm:6.4.9"
+  checksum: be59577c1e1c35509c7ba0e2624335c35bbcfd9485b8a977384c6cc6759341ea1a98d3cb9dbaa5cea4fff9b687e504504e3f9c2cc1674cf3bd8a43a7c74ea3eb
+  languageName: node
+  linkType: hard
+
 "events@npm:^3.3.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
@@ -5077,6 +5105,13 @@ __metadata:
   dependencies:
     punycode: ^1.3.2
   checksum: 5043d0c4a8d775ff58504d56c096563c11b113e4cb8a2668c6f824a1cd4fb3812e2fdf76537eb24a7ce4ae7def6bd9747da630c617cf2a4b6ce0c42514e4f21c
+  languageName: node
+  linkType: hard
+
+"fastest-validator@npm:^1.16.0":
+  version: 1.17.0
+  resolution: "fastest-validator@npm:1.17.0"
+  checksum: 0a6240f6dc7b544b3aadf9367410ecd64590dbfe505e6a24c339df954dd216f3a714d64a224abeef531d0a40dc348efe6cdbf59372d28954ac450cc0b212e0ec
   languageName: node
   linkType: hard
 
@@ -5439,7 +5474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.2.0":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -5996,6 +6031,13 @@ __metadata:
   version: 1.9.1
   resolution: "ipaddr.js@npm:1.9.1"
   checksum: f88d3825981486f5a1942414c8d77dd6674dd71c065adcfa46f578d677edcb99fda25af42675cb59db492fdf427b34a5abfcde3982da11a8fd83a500b41cfe77
+  languageName: node
+  linkType: hard
+
+"ipaddr.js@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "ipaddr.js@npm:2.0.1"
+  checksum: dd194a394a843d470f88d17191b0948f383ed1c8e320813f850c336a0fcb5e9215d97ec26ca35ab4fbbd31392c8b3467f3e8344628029ed3710b2ff6b5d1034e
   languageName: node
   linkType: hard
 
@@ -7090,6 +7132,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kleur@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "kleur@npm:4.1.5"
+  checksum: 1dc476e32741acf0b1b5b0627ffd0d722e342c1b0da14de3e8ae97821327ca08f9fb944542fb3c126d90ac5f27f9d804edbe7c585bf7d12ef495d115e0f22c12
+  languageName: node
+  linkType: hard
+
+"leven@npm:2.1.0":
+  version: 2.1.0
+  resolution: "leven@npm:2.1.0"
+  checksum: f7b4a01b15c0ee2f92a04c0367ea025d10992b044df6f0d4ee1a845d4a488b343e99799e2f31212d72a2b1dea67124f57c1bb1b4561540df45190e44b5b8b394
+  languageName: node
+  linkType: hard
+
 "leven@npm:^3.1.0":
   version: 3.1.0
   resolution: "leven@npm:3.1.0"
@@ -7697,6 +7753,102 @@ __metadata:
   dependencies:
     obliterator: ^2.0.1
   checksum: 6669d687a434226924b2c84ee6eb7ce7d0f83dfc5caad8bcc164c73c0c11fb6d43cbe32636e710f068046f4b40a56c3032532554e93e02640aafc6ca3dd222e6
+  languageName: node
+  linkType: hard
+
+"moleculer@npm:^0.14.29":
+  version: 0.14.29
+  resolution: "moleculer@npm:0.14.29"
+  dependencies:
+    args: ^5.0.3
+    eventemitter2: ^6.4.9
+    fastest-validator: ^1.16.0
+    glob: ^7.2.0
+    ipaddr.js: ^2.0.1
+    kleur: ^4.1.5
+    lodash: ^4.17.21
+    lru-cache: ^6.0.0
+    node-fetch: ^2.6.7
+    recursive-watch: ^1.1.4
+  peerDependencies:
+    amqplib: ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0
+    avsc: ^5.0.0
+    bunyan: ^1.0.0
+    cbor-x: ^0.8.3 || ^0.9.0 || ^1.2.0
+    dd-trace: ^0.33.0 || ^0.34.0 || ^0.35.0 || ^0.36.0 || >=1.0.0 <1.6.0
+    debug: ^4.0.0
+    etcd3: ^1.0.0
+    ioredis: ^4.0.0 || ^5.0.0
+    jaeger-client: ^3.0.0
+    kafka-node: ^5.0.0
+    log4js: ^6.0.0
+    mqtt: ^4.0.0
+    msgpack5: ^5.0.0 || ^6.0.0
+    nats: ^1.0.0 || ^2.0.0
+    node-nats-streaming: ^0.0.51 || ^0.2.0 || ^0.3.0
+    notepack.io: ^2.0.0 || ^3.0.0
+    pino: ^6.0.0 || ^7.0.0 || ^8.0.0
+    protobufjs: ^6.0.0 || ^7.0.0
+    redlock: ^4.0.0
+    rhea-promise: ^1.0.0 || ^2.0.0
+    thrift: ^0.12.0 || ^0.16.0
+    winston: ^3.0.0
+  peerDependenciesMeta:
+    amqplib:
+      optional: true
+    avsc:
+      optional: true
+    bunyan:
+      optional: true
+    cbor-x:
+      optional: true
+    dd-trace:
+      optional: true
+    debug:
+      optional: true
+    etcd3:
+      optional: true
+    ioredis:
+      optional: true
+    jaeger-client:
+      optional: true
+    kafka-node:
+      optional: true
+    log4js:
+      optional: true
+    mqtt:
+      optional: true
+    msgpack5:
+      optional: true
+    nats:
+      optional: true
+    node-nats-streaming:
+      optional: true
+    notepack.io:
+      optional: true
+    pino:
+      optional: true
+    protobufjs:
+      optional: true
+    redlock:
+      optional: true
+    rhea-promise:
+      optional: true
+    thrift:
+      optional: true
+    winston:
+      optional: true
+  bin:
+    moleculer-runner: bin/moleculer-runner.js
+    moleculer-runner-esm: bin/moleculer-runner.mjs
+  checksum: b04d1012dcf86136e1bfc1930a0acfde028295cc5220ae0ed8f4d23236cf63fa3417f01f1f82cd11d1661aebd32d4834bffe052dbe6d89d514acde1d9a107eff
+  languageName: node
+  linkType: hard
+
+"mri@npm:1.1.4":
+  version: 1.1.4
+  resolution: "mri@npm:1.1.4"
+  checksum: e65b9aed3b9e423ad4c11f529ab1b9280f65dce8fb476d0da236b5c570ad3322fbbcd2393180855f1474f8b0f982d76ad398766fbd47b8a5ab4069e325d0268e
   languageName: node
   linkType: hard
 
@@ -8645,6 +8797,17 @@ __metadata:
   version: 0.2.0
   resolution: "real-require@npm:0.2.0"
   checksum: fa060f19f2f447adf678d1376928c76379dce5f72bd334da301685ca6cdcb7b11356813332cc243c88470796bc2e2b1e2917fc10df9143dd93c2ea608694971d
+  languageName: node
+  linkType: hard
+
+"recursive-watch@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "recursive-watch@npm:1.1.4"
+  dependencies:
+    ttl: ^1.3.0
+  bin:
+    recursive-watch: ./bin.js
+  checksum: 0cce9c6413e048c6e0568fff71f3aa7484df76c248347f58456bfc9973b9d27d5b3c3789f886e8251090d921ce104942a2df5eb40494bde86dc6bb41d9f58bfb
   languageName: node
   linkType: hard
 
@@ -9749,6 +9912,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ttl@npm:^1.3.0":
+  version: 1.3.1
+  resolution: "ttl@npm:1.3.1"
+  checksum: 97a00686f678e503d9416f44c4effae32f813a1090e433a29095bb1ddf861c1c15f848b0f13f772c2063b0a831e4656510bde0174657e566f644205aff2baf37
+  languageName: node
+  linkType: hard
+
 "twilio@npm:^4.8.0":
   version: 4.8.0
   resolution: "twilio@npm:4.8.0"
@@ -9812,6 +9982,13 @@ __metadata:
     for-each: ^0.3.3
     is-typed-array: ^1.1.9
   checksum: 2228febc93c7feff142b8c96a58d4a0d7623ecde6c7a24b2b98eb3170e99f7c7eff8c114f9b283085cd59dcd2bd43aadf20e25bba4b034a53c5bb292f71f8956
+  languageName: node
+  linkType: hard
+
+"typedi@npm:0.8.0":
+  version: 0.8.0
+  resolution: "typedi@npm:0.8.0"
+  checksum: f6fc275672945953aa3486582273a89bcf4e6c0808810a1f21332f4725d0493d1fb74fef8cdb7bc700ec8aa9c36db9a070d6a2f88c8639037185f0d78b988692
   languageName: node
   linkType: hard
 
