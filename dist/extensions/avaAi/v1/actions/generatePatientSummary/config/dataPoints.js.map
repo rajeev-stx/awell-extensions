@@ -1,0 +1,1 @@
+{"version":3,"file":"dataPoints.js","sourceRoot":"","sources":["../../../../../../../extensions/avaAi/v1/actions/generatePatientSummary/config/dataPoints.ts"],"names":[],"mappings":";;;AAEa,QAAA,UAAU,GAAG;IACxB,MAAM,EAAE;QACN,0EAA0E;QAC1E,GAAG,EAAE,QAAQ;QACb,SAAS,EAAE,QAAQ;KACpB;IACD,cAAc,EAAE;QACd,GAAG,EAAE,gBAAgB;QACrB,SAAS,EAAE,QAAQ;KACpB;CAC4C,CAAA"}

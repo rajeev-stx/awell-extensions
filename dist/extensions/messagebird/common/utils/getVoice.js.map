@@ -1,0 +1,1 @@
+{"version":3,"file":"getVoice.js","sourceRoot":"","sources":["../../../../../extensions/messagebird/common/utils/getVoice.ts"],"names":[],"mappings":";;;AAEO,MAAM,QAAQ,GAAG,CAAC,eAAmC,EAAS,EAAE;IACrE,IAAI,eAAe,KAAK,MAAM,IAAI,eAAe,KAAK,QAAQ,EAAE;QAC9D,OAAO,eAAe,CAAA;KACvB;IAED,MAAM,YAAY,GAAG,QAAQ,CAAA;IAE7B,OAAO,YAAY,CAAA;AACrB,CAAC,CAAA;AARY,QAAA,QAAQ,YAQpB"}

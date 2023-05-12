@@ -10,9 +10,6 @@
 !.yarn/cache
 #.pnp.*
 
-# Compiled typescript
-dist/*
-
 .DS_Store
 
 # local files

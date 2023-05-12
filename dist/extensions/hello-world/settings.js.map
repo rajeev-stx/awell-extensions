@@ -1,0 +1,1 @@
+{"version":3,"file":"settings.js","sourceRoot":"","sources":["../../../extensions/hello-world/settings.ts"],"names":[],"mappings":";;;AAEa,QAAA,QAAQ,GAAG;IACtB,MAAM,EAAE;QACN,GAAG,EAAE,QAAQ;QACb,KAAK,EAAE,QAAQ;QACf,UAAU,EAAE,IAAI;QAChB,WAAW,EAAE,yDAAyD;KACvE;CACgC,CAAA"}
