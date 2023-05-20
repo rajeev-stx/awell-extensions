@@ -20,7 +20,7 @@ jobs:
           always-auth: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: yarn install
         run: yarn
 
@@ -34,7 +34,7 @@ jobs:
           
           if [[ $branch != "main" ]]; then
             yarn version "$pkg_version-beta$GITHUB_RUN_NUMBER"
-            yarn publish --tag beta --access public
+            yarn npm publish --tag beta --access public
           else
-            yarn publish --access public
+            yarn npm publish --access public
           fi
