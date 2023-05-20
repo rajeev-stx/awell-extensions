@@ -1,6 +1,19 @@
 {
   "name": "@awell/awell-extensions",
+  "version": "1.0.0",
   "packageManager": "yarn@3.4.1",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "dist/src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awell-health/awell-extensions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/awell-health/awell-extensions/issues"
+  },
+  "homepage": "https://github.com/awell-health/awell-extensions#readme",
   "scripts": {
     "dev": "PRETTY_LOGS=true LOG_LEVEL=debug ts-node-dev --clear --transpile-only ./src/index.ts",
     "clean": "rimraf dist/*",
@@ -8,9 +21,10 @@
     "start": "node dist/src/index.js",
     "lint": "eslint **/*.ts",
     "postinstall": "husky install",
-    "test": "jest",
-    "elation:webhook": "yarn esbuild ./extensions/elation/scripts/create_webhook.ts --bundle --platform=node | yarn node"
+    "test": "jest"
   },
+  "types": "dist/src/index.d.ts",
+  "files": [ "dist", "!**/__tests__/**", "!**/__mocks__/**" ],
   "devDependencies": {
     "@graphql-codegen/cli": "^3.2.2",
     "@graphql-codegen/typescript": "^3.0.2",
