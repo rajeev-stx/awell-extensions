@@ -1,5 +1,5 @@
 {
-  "name": "@awell/awell-extensions",
+  "name": "@awell-health/awell-extensions",
   "version": "1.0.0",
   "packageManager": "yarn@3.4.1",
   "publishConfig": {
@@ -24,7 +24,11 @@
     "test": "jest"
   },
   "types": "dist/src/index.d.ts",
-  "files": [ "dist", "!**/__tests__/**", "!**/__mocks__/**" ],
+  "files": [
+    "dist",
+    "!**/__tests__/**",
+    "!**/__mocks__/**"
+  ],
   "devDependencies": {
     "@graphql-codegen/cli": "^3.2.2",
     "@graphql-codegen/typescript": "^3.0.2",

@@ -53,9 +53,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@awell/awell-extensions@workspace:.":
+"@awell-health/awell-extensions@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@awell/awell-extensions@workspace:."
+  resolution: "@awell-health/awell-extensions@workspace:."
   dependencies:
     "@dropbox/sign": ^1.1.3
     "@graphql-codegen/cli": ^3.2.2
