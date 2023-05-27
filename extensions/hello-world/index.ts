@@ -20,4 +20,5 @@ export const HelloWorld: Extension = {
     log,
   },
   webhooks,
+  is_private: true,
 }
