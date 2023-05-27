@@ -53,12 +53,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@awell-health/awell-extensions-types@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@awell-health/awell-extensions-types@npm:0.0.2"
+"@awell-health/awell-extensions-types@npm:0.1.3-beta18":
+  version: 0.1.3-beta18
+  resolution: "@awell-health/awell-extensions-types@npm:0.1.3-beta18"
   dependencies:
     zod: ^3.21.4
-  checksum: 2e07c8b71acb4128c6269f41f5a3094838522fe31812589a7fcdfd96edc35535437f6ac4028f73b02668b2d20419c7380b6e97817e66fe85fddfa7037fe813b1
+  checksum: 6815125c9ec1a35b309058a14b10389c86d34d02cbb8d4a9fd202d8aebb43bc671049398b515d383ac4953435b85e27d377b091709c91ccaf8683d3199b12781
   languageName: node
   linkType: hard
 
@@ -66,7 +66,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@awell-health/awell-extensions@workspace:."
   dependencies:
-    "@awell-health/awell-extensions-types": ^0.0.2
+    "@awell-health/awell-extensions-types": 0.1.3-beta18
     "@dropbox/sign": ^1.1.3
     "@graphql-codegen/cli": ^3.2.2
     "@graphql-codegen/typescript": ^3.0.2

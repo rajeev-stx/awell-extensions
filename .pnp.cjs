@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@awell-health/awell-extensions-types", "npm:0.0.2"],\
+            ["@awell-health/awell-extensions-types", "npm:0.1.3-beta18"],\
             ["@dropbox/sign", "npm:1.1.3"],\
             ["@graphql-codegen/cli", "virtual:6d1931a4340173b37cf492f77cb803dda2f92958adb6847175388be3c73eb24be6f6bfd25e0fc0b7ad8dba815a972ad5e9d1f18e67fb58466bb7c99205a9d42e#npm:3.2.2"],\
             ["@graphql-codegen/typescript", "virtual:6d1931a4340173b37cf492f77cb803dda2f92958adb6847175388be3c73eb24be6f6bfd25e0fc0b7ad8dba815a972ad5e9d1f18e67fb58466bb7c99205a9d42e#npm:3.0.2"],\
@@ -146,7 +146,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@awell-health/awell-extensions", "workspace:."],\
-            ["@awell-health/awell-extensions-types", "npm:0.0.2"],\
+            ["@awell-health/awell-extensions-types", "npm:0.1.3-beta18"],\
             ["@dropbox/sign", "npm:1.1.3"],\
             ["@graphql-codegen/cli", "virtual:6d1931a4340173b37cf492f77cb803dda2f92958adb6847175388be3c73eb24be6f6bfd25e0fc0b7ad8dba815a972ad5e9d1f18e67fb58466bb7c99205a9d42e#npm:3.2.2"],\
             ["@graphql-codegen/typescript", "virtual:6d1931a4340173b37cf492f77cb803dda2f92958adb6847175388be3c73eb24be6f6bfd25e0fc0b7ad8dba815a972ad5e9d1f18e67fb58466bb7c99205a9d42e#npm:3.0.2"],\
@@ -200,10 +200,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@awell-health/awell-extensions-types", [\
-        ["npm:0.0.2", {\
-          "packageLocation": "./.yarn/cache/@awell-health-awell-extensions-types-npm-0.0.2-3c2d78d86d-2e07c8b71a.zip/node_modules/@awell-health/awell-extensions-types/",\
+        ["npm:0.1.3-beta18", {\
+          "packageLocation": "./.yarn/cache/@awell-health-awell-extensions-types-npm-0.1.3-beta18-469f27c161-6815125c9e.zip/node_modules/@awell-health/awell-extensions-types/",\
           "packageDependencies": [\
-            ["@awell-health/awell-extensions-types", "npm:0.0.2"],\
+            ["@awell-health/awell-extensions-types", "npm:0.1.3-beta18"],\
             ["zod", "npm:3.21.4"]\
           ],\
           "linkType": "HARD"\
